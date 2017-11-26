@@ -10,7 +10,11 @@ class Business extends React.Component {
         <div className="image-container">
           <img src={this.props.business.imageSrc} alt={this.props.business.name}/>
         </div>
-        <h2>{this.props.business.name}</h2>
+          <h2>
+            <a href={this.props.business.url} target="_blank">
+        {this.props.business.name}
+            </a>
+          </h2>
         <div className="Business-information">
           <div className="Business-address">
             <p>{this.props.business.address}</p>
